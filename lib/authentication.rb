@@ -40,8 +40,6 @@ module HelloApp::Authentication
   post '/sessions' do
     warden.authenticate!
     if warden.authenticated?
-      redirect "/users/#{warden.user.login}"
-    else
       redirect '/'
     end
   end

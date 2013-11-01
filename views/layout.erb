@@ -6,6 +6,11 @@
   </head>
   <body>
     <div class='header'>
+      <% if @current_user %>
+        Hi, <%= @current_user.email %>!
+      <% else %>
+        You're not logged in!
+      <% end %>
     </div>
     <div class='content'>
       <%= yield %>
