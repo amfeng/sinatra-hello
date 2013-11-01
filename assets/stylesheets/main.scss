@@ -1,0 +1,36 @@
+html, body {
+  font-family: 'proxima-nova', Helvetica, Arial, san-serif;
+  font-size: 15px;
+  color: #444;
+}
+
+div.header, div.content, div.footer {
+  margin: auto;
+  width: 80%;
+}
+
+a {
+  color: #8FB973;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+div.content {
+  padding-top: 30px;
+}
+
+div.footer {
+  text-align: center;
+  font-size: 90%;
+}

@@ -1,0 +1,15 @@
+development:
+  sessions:
+    default:
+      database: mongoid_dev
+      hosts:
+        - localhost:27017
+  options:
+    raise_not_found_error: false
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGODB_URL'] %>
+  options:
+    raise_not_found_error: false
+    skip_version_check: true
